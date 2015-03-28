@@ -1,0 +1,51 @@
+﻿#TagBegin=
+#TagEnd=
+#CommentBegin1=
+#CommentEnd1=
+#LineComment1=#@#
+#CommentBegin2=
+#CommentEnd2=
+#LineComment2=
+#SpecialSyntax=None
+#ScriptBegin=
+#ScriptEnd=
+#QuoteSingle=False
+#QuoteDouble=False
+#QuoteContinue=False
+#EscapeCharacter=
+
+#Word Color=0, WholeWord=False, RightSide=False, MatchCase=False, InsideTag=False, RegEx=True
+@<(em|strong|b)>\{[^^}]+?\}
+
+#Word Color=1, WholeWord=False, RightSide=False, MatchCase=False, InsideTag=False, RegEx=True
+@<(list|img|table)>\{[^^}]+?\}
+
+#Word Color=2, WholeWord=False, RightSide=False, MatchCase=False, InsideTag=False, RegEx=False
+===[/column]
+
+#Word Color=2, WholeWord=False, RightSide=True, MatchCase=False, InsideTag=False, RegEx=False
+^#@.+
+===[column]
+
+#Word Color=3, WholeWord=False, RightSide=False, MatchCase=False, InsideTag=False, RegEx=True
+^^//(indep|numberless)?image(\[[^^\]]*\])*
+^^//\w+(\[.*\])*
+
+#Word Color=3, WholeWord=False, RightSide=True, MatchCase=False, InsideTag=False, RegEx=True
+^^//}
+
+#Word Color=4, WholeWord=False, RightSide=False, MatchCase=False, InsideTag=False, RegEx=True
+@<\w+>\{[^^}]+?\}
+
+#Word Color=4, WholeWord=False, RightSide=True, MatchCase=False, InsideTag=False, RegEx=True
+^^\s*\*+\s*
+^^\s*\d+\.\s*
+
+#Word Color=5, WholeWord=False, RightSide=True, MatchCase=False, InsideTag=False, RegEx=True
+^^={3,5}[^^=].*
+
+#Word Color=6, WholeWord=False, RightSide=True, MatchCase=False, InsideTag=False, RegEx=True
+^^={1}[^^=].*
+
+#Word Color=7, WholeWord=False, RightSide=True, MatchCase=False, InsideTag=False, RegEx=True
+^^={2}[^^=].*
