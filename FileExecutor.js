@@ -1,3 +1,6 @@
+#title="FileExecutor"
+#tooltip="現在開いているファイルを、各種コンパイラ・インタプリタで開きます。"
+
 var fso = new ActiveXObject('Scripting.FileSystemObject');
 var shell = new ActiveXObject("WScript.Shell");
 var scriptname = scriptFullName;
