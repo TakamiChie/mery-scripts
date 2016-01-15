@@ -15,6 +15,7 @@ SyntaxChecker動作定義用ファイル仕様書
 ### onparse関数の仕様
 
 onparse関数は、次の形式となる。
+
     function(output, error);
 
 第一引数outputには、構文チェッカーの標準出力が、第二引数errorには、標準エラーが格納される。
